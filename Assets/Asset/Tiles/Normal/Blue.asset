@@ -19,6 +19,9 @@ MonoBehaviour:
   - m_Id: 0
     m_Sprites:
     - {fileID: 21300000, guid: 10ef5f852f5799942b0107cdf22397e3, type: 3}
+    - {fileID: 21300000, guid: 64acf66ec979d6c479f79eaa61bd99ed, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
