@@ -27,7 +27,7 @@ public class AniController : MonoBehaviour
             {
                 case PlayerState.CityIdle:
                 {
-                    animator.CrossFade("StartUmbr",0);
+                    animator.CrossFade("CityIdle",0);
                     break;
                 }
                 case PlayerState.CityAttack:

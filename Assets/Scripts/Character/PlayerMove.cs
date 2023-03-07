@@ -97,7 +97,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                //AniController.instance.playerState = AniController.PlayerState.CityDownJumping;
+                AniController.instance.playerState = AniController.PlayerState.CityDownJumping;
             }
         }
 
