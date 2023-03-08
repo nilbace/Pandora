@@ -23,6 +23,9 @@ public class PlayerMove : MonoBehaviour
     public bool isGround;
     public bool isLanding;
     public float landingtime;
+    public GameObject JumpFX;
+    public float effectDur;
+    Coroutine JumpFxCor;
 
     [Header("Dash")]
     public bool isDash = false;
@@ -127,7 +130,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Z))
         {                                       //유지
             if(canJump && isGround && !isDash && !iscling && !isclingJumping) //점프시작
             {
@@ -137,6 +140,12 @@ public class PlayerMove : MonoBehaviour
                 {
                     rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x ,maxjumpSpeed);
                 }
+                JumpFX.transform.position = transform.position;
+                JumpFX.SetActive(false);
+                if(JumpFxCor != null) StopCoroutine(JumpFxCor);
+                JumpFX.GetComponent<SpriteRenderer>().flipX = isLookingleft ? true : false;
+                JumpFX.SetActive(true);
+                JumpFxCor = StartCoroutine(setFalse4_60(JumpFX));
             }
                                                                 //유지
             if(canJump && jumpTimer < jumpLimitTime && !isDash && !iscling && !isclingJumping) //점프를 누르는 중
@@ -191,7 +200,7 @@ public class PlayerMove : MonoBehaviour
 
         }
 
-        if(!Input.GetKey(KeyCode.Space))
+        else
         {
             if(isJumping && !isGround)
             {
@@ -199,7 +208,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.C))  //이면대쉬
+        if(Input.GetKey(KeyCode.LeftShift))  //이면대쉬
         {
             if(canDash && DashTimer>DashCoolTime) 
             {
@@ -208,7 +217,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.X))   //일반대쉬
+        if(Input.GetKey(KeyCode.C))   //일반대쉬
         {
             if(canNormalDash && NormalDashTimer>NorMalDashCoolTime) 
             {
@@ -217,7 +226,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.Z))   //기본공격
+        if(Input.GetKey(KeyCode.X))   //기본공격
         {
             if(canAttack && atkTimer > attCooltime)
             {   
@@ -345,6 +354,12 @@ public class PlayerMove : MonoBehaviour
     {
         yield return new WaitForSeconds(landingtime);
         isLanding=false;
+    }
+
+    IEnumerator setFalse4_60(GameObject gameObject)
+    {
+        yield return new WaitForSeconds(effectDur/60f);
+        gameObject.SetActive(false);
     }
 
     IEnumerator Dash()
