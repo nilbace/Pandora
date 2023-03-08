@@ -26,6 +26,7 @@ public class PlayerMove : MonoBehaviour
     public GameObject JumpFX;
     public float effectDur;
     Coroutine JumpFxCor;
+    public Vector2 FXpoz;
 
     [Header("Dash")]
     public bool isDash = false;
@@ -140,7 +141,7 @@ public class PlayerMove : MonoBehaviour
                 {
                     rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x ,maxjumpSpeed);
                 }
-                JumpFX.transform.position = transform.position;
+                JumpFX.transform.position = transform.position + (Vector3)FXpoz;
                 JumpFX.SetActive(false);
                 if(JumpFxCor != null) StopCoroutine(JumpFxCor);
                 JumpFX.GetComponent<SpriteRenderer>().flipX = isLookingleft ? true : false;
