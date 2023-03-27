@@ -5381,7 +5381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6145f9f760b650743b37ce8bb7b3b390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DevMode: 1
+  DevMode: 0
   devModeSpeed: 1
   eventChecker: 14
   priest: {fileID: 714720555}

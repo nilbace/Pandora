@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 2695dfd05dcc6f54aa147c69de3476f9
+guid: 75dde9f8d7203c8479a97e014db03d9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3621981366532146980
-    second: KakaoTalk_20230125_091805279_0
+      213: 9199720796140072400
+    second: pandora_run-Sheet (1)_0
   - first:
-      213: -1393255244274139510
-    second: KakaoTalk_20230125_091805279_1
+      213: 6837991665969826382
+    second: pandora_run-Sheet (1)_1
   - first:
-      213: 9119976232224177596
-    second: KakaoTalk_20230125_091805279_2
+      213: 7270223720125638979
+    second: pandora_run-Sheet (1)_2
   - first:
-      213: 6444586499507943018
-    second: KakaoTalk_20230125_091805279_3
+      213: 8931423529104259074
+    second: pandora_run-Sheet (1)_3
   - first:
-      213: -4659700045264415624
-    second: KakaoTalk_20230125_091805279_4
+      213: -2970695133429996322
+    second: pandora_run-Sheet (1)_4
+  - first:
+      213: -2778623790960718412
+    second: pandora_run-Sheet (1)_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KakaoTalk_20230125_091805279_0
+      name: pandora_run-Sheet (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +124,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd874c023232cbdc0800000000000000
-      internalID: -3621981366532146980
+      spriteID: 0dde3b66259fbaf70800000000000000
+      internalID: 9199720796140072400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KakaoTalk_20230125_091805279_1
+      name: pandora_run-Sheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a8633e03d65ee50800000000000000
+      internalID: 6837991665969826382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pandora_run-Sheet (1)_2
       rect:
         serializedVersion: 2
         x: 100
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +166,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ef693bcb92aace0800000000000000
-      internalID: -1393255244274139510
+      spriteID: 34925b344f505e460800000000000000
+      internalID: 7270223720125638979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KakaoTalk_20230125_091805279_2
+      name: pandora_run-Sheet (1)_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20833d6016ac2fb70800000000000000
+      internalID: 8931423529104259074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pandora_run-Sheet (1)_4
       rect:
         serializedVersion: 2
         x: 200
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd3ab1401aa09e70800000000000000
-      internalID: 9119976232224177596
+      spriteID: ed46cebf388f5c6d0800000000000000
+      internalID: -2970695133429996322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KakaoTalk_20230125_091805279_3
+      name: pandora_run-Sheet (1)_5
       rect:
         serializedVersion: 2
-        x: 300
+        x: 250
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,29 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a66f273c645cf6950800000000000000
-      internalID: 6444586499507943018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KakaoTalk_20230125_091805279_4
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 874942a3f7b655fb0800000000000000
-      internalID: -4659700045264415624
+      spriteID: 4bd465742685079d0800000000000000
+      internalID: -2778623790960718412
       vertices: []
       indices: 
       edges: []

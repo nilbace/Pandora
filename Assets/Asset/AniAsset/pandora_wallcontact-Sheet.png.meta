@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 8da32e56f79681b4c8efac6cf081d6d6
+guid: 580626389913c55498e38d4f023f644b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4118715440727161731
-    second: "Left\uC6A9_0"
+      213: -5436559256022014442
+    second: pandora_wallcontact-Sheet_0
   - first:
-      213: 670390284026448475
-    second: "Left\uC6A9_1"
+      213: 2741269231030083859
+    second: pandora_wallcontact-Sheet_1
   - first:
-      213: -7608289795671848672
-    second: "Left\uC6A9_2"
+      213: 3573918807601600339
+    second: pandora_wallcontact-Sheet_2
   - first:
-      213: 5732841864346720593
-    second: "Left\uC6A9_3"
+      213: 862557571903611607
+    second: pandora_wallcontact-Sheet_3
   - first:
-      213: -5745822582506556437
-    second: "Left\uC6A9_4"
+      213: -4077194844336265948
+    second: pandora_wallcontact-Sheet_4
+  - first:
+      213: -7461153898247171304
+    second: pandora_wallcontact-Sheet_5
+  - first:
+      213: -4536958519715226243
+    second: pandora_wallcontact-Sheet_6
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Left\uC6A9_0"
+      name: pandora_wallcontact-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +127,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d748a88e02267d6c0800000000000000
-      internalID: -4118715440727161731
+      spriteID: 616227829267d84b0800000000000000
+      internalID: -5436559256022014442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Left\uC6A9_1"
+      name: pandora_wallcontact-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311a14d77d1fa0620800000000000000
+      internalID: 2741269231030083859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pandora_wallcontact-Sheet_2
       rect:
         serializedVersion: 2
         x: 100
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +169,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5a05445964bd4900800000000000000
-      internalID: 670390284026448475
+      spriteID: 3575e27583c199130800000000000000
+      internalID: 3573918807601600339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Left\uC6A9_2"
+      name: pandora_wallcontact-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d263a7aa8b68fb00800000000000000
+      internalID: 862557571903611607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pandora_wallcontact-Sheet_4
       rect:
         serializedVersion: 2
         x: 200
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +211,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02900c4cdbce96690800000000000000
-      internalID: -7608289795671848672
+      spriteID: 425684714e4ea67c0800000000000000
+      internalID: -4077194844336265948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Left\uC6A9_3"
+      name: pandora_wallcontact-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813d4787f08a47890800000000000000
+      internalID: -7461153898247171304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pandora_wallcontact-Sheet_6
       rect:
         serializedVersion: 2
         x: 300
         y: 0
-        width: 100
-        height: 100
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,29 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159dfdd3d452f8f40800000000000000
-      internalID: 5732841864346720593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Left\uC6A9_4"
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be3774bcdccb240b0800000000000000
-      internalID: -5745822582506556437
+      spriteID: d7d11bf934c7901c0800000000000000
+      internalID: -4536958519715226243
       vertices: []
       indices: 
       edges: []
@@ -223,7 +271,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

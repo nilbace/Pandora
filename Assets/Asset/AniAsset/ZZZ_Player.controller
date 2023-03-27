@@ -1,6 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-9200396775638386394
+--- !u!1102 &-8990363402972474740
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CityDownJumping
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 2717c129a63494e4582635c634dd3938, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &-3536748668097522363
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -20,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 468de8ebb0aa905489bb482f8ac4cb1e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0922bf73f98e4cb4e99f5286fe08acf1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -37,37 +63,31 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1265593428249501221}
-    m_Position: {x: 210, y: 300, z: 0}
+    m_Position: {x: 500, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 940383885720914861}
     m_Position: {x: 190, y: 630, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 361821836323573141}
-    m_Position: {x: 190, y: 560, z: 0}
+    m_Position: {x: 190, y: 570, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1486450967265606454}
-    m_Position: {x: 680, y: 280, z: 0}
+    m_State: {fileID: -8990363402972474740}
+    m_Position: {x: 610, y: 340, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -9200396775638386394}
-    m_Position: {x: 280, y: 50, z: 0}
+    m_State: {fileID: -1077392914393157552}
+    m_Position: {x: 410, y: 400, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -795360295515757851}
-    m_Position: {x: 280, y: 100, z: 0}
+    m_State: {fileID: 4559965575906294560}
+    m_Position: {x: 610, y: 290, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3943491969592268864}
-    m_Position: {x: 430, y: 290, z: 0}
+    m_State: {fileID: -3536748668097522363}
+    m_Position: {x: 310, y: 140, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2264823607796535304}
-    m_Position: {x: 160, y: 420, z: 0}
+    m_State: {fileID: 621255902531867830}
+    m_Position: {x: 200, y: 310, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 2546644478836106966}
-    m_Position: {x: 190, y: 200, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 3434816555716153528}
-    m_Position: {x: 650, y: 220, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2064211025079325183}
-    m_Position: {x: 670, y: 160, z: 0}
+    m_State: {fileID: 6631488373319392675}
+    m_Position: {x: 120, y: 440, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -77,59 +97,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: -100, y: 380, z: 0}
   m_ExitPosition: {x: -50, y: 180, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -2264823607796535304}
---- !u!1102 &-2264823607796535304
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: CityIdle
-  m_Speed: 0.7
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 421d2a82ba573ed4d94d3d3b0bf626a4, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-2064211025079325183
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: CityUPJumping
-  m_Speed: 1.99
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e8cd4ed7870d80f41bde0172555e74ad, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_DefaultState: {fileID: 6631488373319392675}
 --- !u!1102 &-1265593428249501221
 AnimatorState:
   serializedVersion: 6
@@ -156,15 +124,15 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-795360295515757851
+--- !u!1102 &-1077392914393157552
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CityClingLeftJump
-  m_Speed: 0.25
+  m_Name: CityJumpDash
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -176,7 +144,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8a7542737a8968d48bdab717ab2f30bb, type: 2}
+  m_Motion: {fileID: 7400000, guid: cafd211b22cb7af4f8aee042c20a0fe2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -242,6 +210,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &621255902531867830
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CityWalk
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: cc681c414bb609a4dbb9e741f7d5d0cc, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &940383885720914861
 AnimatorState:
   serializedVersion: 6
@@ -268,40 +262,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1486450967265606454
+--- !u!1102 &4559965575906294560
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CityLanding
-  m_Speed: 0.41
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fbf4cff953b73a5459a056a7666f9637, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &2546644478836106966
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: CityWalk
+  m_Name: CityUPJumping
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -314,46 +282,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cc681c414bb609a4dbb9e741f7d5d0cc, type: 2}
+  m_Motion: {fileID: 7400000, guid: e8cd4ed7870d80f41bde0172555e74ad, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &3434816555716153528
+--- !u!1102 &6631488373319392675
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CityDownJumping
-  m_Speed: 1.99
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2717c129a63494e4582635c634dd3938, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &3943491969592268864
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: CityJumpDash
+  m_Name: CityIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -366,7 +308,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9b2f7e942db999046aed552413f7b9dc, type: 2}
+  m_Motion: {fileID: 7400000, guid: 421d2a82ba573ed4d94d3d3b0bf626a4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
