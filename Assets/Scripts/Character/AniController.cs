@@ -9,7 +9,7 @@ public class AniController : MonoBehaviour
     public enum PlayerState{
         CityIdle, CityWalk, CityAttack, CityAttack2, CityUPJumping, CityDownJumping, CityLanding, CityClingLeft, CityClingLeftJump, CityClingRight, CityJumpDash, 
 
-        DreamIdle, DreamWalk, DreamAttack 
+        DreamIdle, DreamWalk, DreamUpJumping, DreampDownJumping, 
     }
     public PlayerState playerState = PlayerState.CityIdle;
     public PlayerState lastPlayerState = PlayerState.CityIdle;
@@ -77,6 +77,25 @@ public class AniController : MonoBehaviour
                     animator.CrossFade("DreamIdle",0);
                     break;
                 }
+
+                case PlayerState.DreamWalk:
+                {
+                    animator.CrossFade("DreamWalk",0);
+                    break;
+                }
+
+                case PlayerState.DreampDownJumping:
+                {
+                    animator.CrossFade("DreamDownJumping",0);
+                    break;
+                }
+
+                case PlayerState.DreamUpJumping:
+                {
+                    animator.CrossFade("DreamUPJumping",0);
+                    break;
+                }
+                
             }
         }
     }

@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     public static PlayerMove instance;
     public Rigidbody2D rigidbody2D;
     public float forDebugTimeScale = 1;
+    public bool isInDream = false;
     [Header("Move")]
     public bool canmove = true;
     public float maxSpeed;
@@ -70,7 +71,7 @@ public class PlayerMove : MonoBehaviour
         Time.timeScale = forDebugTimeScale;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         DashTimer+=Time.deltaTime; NormalDashTimer += Time.deltaTime;
         atkTimer += Time.deltaTime;
@@ -82,14 +83,18 @@ public class PlayerMove : MonoBehaviour
 
         
         float h = Input.GetAxisRaw("Horizontal");
+        if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+            TurnLeftorRight();
+
+
         if(!isDash && !isJumping && !isAttacking && !isLanding && !isclingJumping && h==0)
         {
-            AniController.instance.playerState = AniController.PlayerState.CityIdle;
+            AniController.instance.playerState = isInDream ? AniController.PlayerState.DreamIdle: AniController.PlayerState.CityIdle;
         }
 
         if(!isDash && !isJumping && !isAttacking && !isLanding && !isclingJumping && h!=0)
         {
-            AniController.instance.playerState = AniController.PlayerState.CityWalk;
+            AniController.instance.playerState = isInDream ? AniController.PlayerState.DreamWalk: AniController.PlayerState.CityWalk;
         }
 
         //점프하는중
@@ -97,11 +102,11 @@ public class PlayerMove : MonoBehaviour
         {
             if(rigidbody2D.velocity.y > 0)
             {
-                AniController.instance.playerState = AniController.PlayerState.CityUPJumping;
+                AniController.instance.playerState = isInDream ? AniController.PlayerState.DreamUpJumping: AniController.PlayerState.CityUPJumping;
             }
             else
             {
-                AniController.instance.playerState = AniController.PlayerState.CityDownJumping;
+                AniController.instance.playerState = isInDream ? AniController.PlayerState.DreampDownJumping: AniController.PlayerState.CityDownJumping;
             }
         }
 
@@ -141,12 +146,7 @@ public class PlayerMove : MonoBehaviour
                 {
                     rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x ,maxjumpSpeed);
                 }
-                JumpFX.transform.position = transform.position + (Vector3)FXpoz;
-                JumpFX.SetActive(false);
-                if(JumpFxCor != null) StopCoroutine(JumpFxCor);
-                JumpFX.GetComponent<SpriteRenderer>().flipX = isLookingleft ? true : false;
-                JumpFX.SetActive(true);
-                JumpFxCor = StartCoroutine(setFalse4_60(JumpFX));
+                
             }
                                                                 //유지
             if(canJump && jumpTimer < jumpLimitTime && !isDash && !iscling && !isclingJumping) //점프를 누르는 중
@@ -213,6 +213,7 @@ public class PlayerMove : MonoBehaviour
         {
             if(canDash && DashTimer>DashCoolTime) 
             {
+                isInDream = !isInDream;
                 StartCoroutine(Dash());
                 if(isJumping && canDash) {  canDash = false; jumpTimer+=5;}
             }
@@ -328,9 +329,11 @@ public class PlayerMove : MonoBehaviour
         #endregion
     }
 
-
-
-    void lookingLeftOrRight(float dir)
+    public void TurnLeftorRight()
+    {
+        CameraController.SetTimerZero();
+    }
+    public void lookingLeftOrRight(float dir)
     {
         if(dir == -1)
         {
