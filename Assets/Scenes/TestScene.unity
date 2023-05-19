@@ -3143,7 +3143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 2.9, y: 1.5}
-  CamSpeed: 1.63
+  CamSpeed: 0.1
   TestEase: 0
 --- !u!1 &520137567
 GameObject:
